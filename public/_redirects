@@ -1,4 +1,0 @@
-# Cloudflare Pages SPA fallback — serve the Slidev app for any deep link
-# (e.g. /5, /2/1) so refreshing mid-deck doesn't 404. Static assets are
-# matched first; this only catches routes with no matching file.
-/*    /index.html   200
