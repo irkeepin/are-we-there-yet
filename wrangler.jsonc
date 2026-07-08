@@ -1,0 +1,13 @@
+{
+  // Cloudflare Workers static-assets config. `pnpm run build` emits the
+  // Slidev SPA into ./dist; `npx wrangler deploy` uploads it. No Worker
+  // script (no `main`) — this is a static-only deployment.
+  "name": "are-we-there-yet",
+  "compatibility_date": "2025-09-01",
+  "assets": {
+    "directory": "./dist",
+    // Serve index.html for any unmatched deep link (e.g. /5) so refreshing
+    // mid-deck resolves to the Slidev app instead of 404ing.
+    "not_found_handling": "single-page-application"
+  }
+}
