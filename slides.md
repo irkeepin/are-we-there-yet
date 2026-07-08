@@ -19,11 +19,14 @@ the spec in deck/brief.md, then rendered here. Do not originate copy in this fil
 — see the strong-SDD drift rule in CLAUDE.md. Syntax: docs/syntax-reference.md
 
 Transition scheme (deck/brief.md → Animations): every slide opens on its own
-full-bleed photo (<PhotoBg>). The first click both fades the photo (via
-:dimmed="$clicks > 0") and reveals the first content chunk. Subsequent clicks
-reveal one line each; sub-lines reveal together with their parent (v-clicks at
-default depth). "Reveal all at once" nodes wrap their content in a single v-click.
-Between slides, the deck-wide `fade` transition gives the slideshow feel.
+full-bleed photo (<PhotoBg>) with NO text at all. The first click fades the photo
+(via :dimmed="$clicks > 0") and reveals only the slide title (title wrapped in its
+own v-click). Every click after that proceeds normally: content lines reveal one
+per click from click 2 onward, sub-lines reveal together with their parent
+(v-clicks at default depth). "Reveal all at once" nodes reveal their whole body on
+the click after the title. Title/author slides carry title + subtitle in one
+v-click, so click 1 brings the whole block. Between slides, the deck-wide `fade`
+transition gives the slideshow feel.
 -->
 
 <PhotoBg src="/images/PXL_20260627_104251542.png" :dimmed="$clicks > 0" />
@@ -83,7 +86,11 @@ layout: center
 
 <div class="relative z-10 text-left max-w-4xl">
 
+<div v-click>
+
 # The Elephant in the Room
+
+</div>
 
 <v-clicks>
 
@@ -116,7 +123,11 @@ layout: center
 
 <div class="relative z-10 text-left max-w-4xl">
 
+<div v-click>
+
 # DX Annual 2026
+
+</div>
 
 <v-clicks>
 
@@ -151,7 +162,11 @@ layout: center
 
 <div class="relative z-10 text-left max-w-4xl">
 
+<div v-click>
+
 # Measuring Speed & Value
+
+</div>
 
 <v-clicks>
 
@@ -180,7 +195,11 @@ layout: center
 
 <div class="relative z-10 text-left max-w-4xl">
 
+<div v-click>
+
 # AI Platform Engineering
+
+</div>
 
 <v-clicks>
 
@@ -212,7 +231,11 @@ layout: center
 
 <div class="relative z-10 text-left max-w-4xl">
 
+<div v-click>
+
 # Which Tasks to Delegate?
+
+</div>
 
 <v-clicks>
 
@@ -242,7 +265,11 @@ layout: center
 
 <div class="relative z-10 text-left max-w-4xl">
 
+<div v-click>
+
 # Oh the Humans
+
+</div>
 
 <v-clicks>
 
@@ -273,7 +300,11 @@ class: text-center
 
 <div class="relative z-10">
 
+<div v-click>
+
 # Prediction is Difficult<br>Especially About the Future
+
+</div>
 
 <div class="text-left inline-block mt-4">
 
@@ -306,7 +337,11 @@ layout: center
 
 <div class="relative z-10 text-left max-w-4xl">
 
+<div v-click>
+
 # What's Happening in Burlington?
+
+</div>
 
 <div v-click>
 
@@ -335,7 +370,11 @@ layout: center
 
 <div class="relative z-10 text-left max-w-4xl">
 
+<div v-click>
+
 # Speaker Attribution
+
+</div>
 
 <div v-click class="text-lg columns-2 gap-12">
 
