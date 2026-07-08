@@ -23,6 +23,7 @@ text — **do not paraphrase it during regeneration; preserve his voice.**
   - Subtitle: Insights on AI software productivity from [2026 DX Annual](https://getdx.com/dxannual/)
   - Reveal: all at once
 - **Traces to:** `slides.md` slide 1
+- **Image background:** PXL_20260627_104251542.png
 
 ---
 
@@ -37,6 +38,7 @@ text — **do not paraphrase it during regeneration; preserve his voice.**
     - isaiah@isaiahkeepin.com
   - Reveal: all at once
 - **Traces to:** `slides.md` slide 2
+- **Image background:** PXL_20260702_174043807.png
 
 ---
 
@@ -55,6 +57,7 @@ text — **do not paraphrase it during regeneration; preserve his voice.**
       - And do it safely?
       - And help the humans adjust?
 - **Traces to:** `slides.md` slide 3
+- **Image background:** PXL_20260704_230327817.png
 
 ---
 
@@ -72,6 +75,7 @@ text — **do not paraphrase it during regeneration; preserve his voice.**
     - Dev productivity leaders: neither kool-aid nor pitchforks
     - My intent is to help you decide if you want to go deeper with any of the talks posted online
 - **Traces to:** `slides.md` slide 4
+- **Image background:** PXL_20260705_140855514.png
 
 ---
 
@@ -86,6 +90,7 @@ text — **do not paraphrase it during regeneration; preserve his voice.**
     - DX - Org-level PR throughput
     - Uber - Whatever metric you choose will change as you mature
 - **Traces to:** `slides.md` slide 5
+- **Image background:** PXL_20260701_162750105.png
 
 ---
 
@@ -103,6 +108,7 @@ text — **do not paraphrase it during regeneration; preserve his voice.**
       - Eval set for knowledge base
     - **Note for smaller orgs** - lightweight versions of these things are possible and worthwhile, especially in context management
 - **Traces to:** `slides.md` slide 6
+- **Image background:** PXL_20260701_160313578.png
 
 ---
 
@@ -118,6 +124,7 @@ text — **do not paraphrase it during regeneration; preserve his voice.**
       - Agents create, deploy, and operate
       - Except in security - not ready
 - **Traces to:** `slides.md` slide 7
+- **Image background:** PXL_20260701_162730380.png
 
 ---
 
@@ -133,6 +140,7 @@ text — **do not paraphrase it during regeneration; preserve his voice.**
       - For example, power users want lots of custom options, but regular folks want a few vetted choices
     - Twilio - No need for top down mandates - the industry is doing it anyway
 - **Traces to:** `slides.md` slide 8
+- **Image background:** PXL_20260627_190159817.png
 
 ---
 
@@ -147,6 +155,7 @@ text — **do not paraphrase it during regeneration; preserve his voice.**
     - But the skill to adjust now will be the skill to adjust later
     - Practices around the tools will change more slowly than the tools themselves (especially context management)
 - **Traces to:** `slides.md` slide 9
+- **Image background:** PXL_20260701_181756363.png
 
 ---
 
@@ -161,7 +170,8 @@ text — **do not paraphrase it during regeneration; preserve his voice.**
     - How are we deciding which tasks to offload to AI?
     - What stories are we telling of an AI future where people can see themselves thriving?
   - Reveal: All at once
-- **Traces to:** `slides.md` slide 9
+- **Traces to:** `slides.md` slide 10
+- **Image background:** PXL_20260705_202329156.png
 
 ---
 
@@ -182,3 +192,4 @@ text — **do not paraphrase it during regeneration; preserve his voice.**
     - Uber - Abhishek Tibrewal
   - Reveal: All at once
 - **Traces to:** `slides.md` slide 11
+- **Image background:** PXL_20260701_184225732.png

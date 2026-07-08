@@ -35,13 +35,21 @@ look to his existing copy as an example of voice.
 
 ## Visual Style
 
-- dark background
-- bold, colorful text
-- graceful transitions
-- sparse, tasteful animation
+- faded image backgrounds
+  - one image per slide
+  - dial down contrast and brightness so text is easily visible
+- bold, colorful text in a strong, blocky sans-serif font
+  - font size large enough and thick enough to be legible over image
+  - text color varies per slide
+
+## Animations
 - generally reveal one line per click
   - except sub-lines, which should reveal together
   - and except where noted otherwise by a "Reveal" entry in the node
+- slide-show style transitions between each slide
+  - first display a full-screen image unique to that slide with no text at all
+  - then on click, fade that image (drop contrast and brightness) and display the slide title
+  - then each click afterwards proceeds normally (progressive reveal over faded image)
 
 ## Layout
 

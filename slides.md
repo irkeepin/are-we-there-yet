@@ -2,22 +2,46 @@
 theme: seriph
 title: Are We There Yet?
 info: Insights on AI software productivity from 2026 DX Annual — a ChatBTV talk.
-class: text-center
 colorSchema: dark
-transition: slide-left
+transition: fade
 mdc: true
+fonts:
+  sans: Archivo
+  weights: '400,600,900'
+  provider: google
+layout: center
+class: text-center
 ---
-
-# Are We There Yet?
-
-Insights on AI software productivity from [2026 DX Annual](https://getdx.com/dxannual/)
 
 <!--
 GENERATED ARTIFACT. Content authored in deck/outline.md (Isaiah's voice) against
 the spec in deck/brief.md, then rendered here. Do not originate copy in this file
 — see the strong-SDD drift rule in CLAUDE.md. Syntax: docs/syntax-reference.md
 
-arc-01 · Title slide.
+Transition scheme (deck/brief.md → Animations): every slide opens on its own
+full-bleed photo (<PhotoBg>). The first click both fades the photo (via
+:dimmed="$clicks > 0") and reveals the first content chunk. Subsequent clicks
+reveal one line each; sub-lines reveal together with their parent (v-clicks at
+default depth). "Reveal all at once" nodes wrap their content in a single v-click.
+Between slides, the deck-wide `fade` transition gives the slideshow feel.
+-->
+
+<PhotoBg src="/images/PXL_20260627_104251542.png" :dimmed="$clicks > 0" />
+
+<div v-click class="relative z-10">
+
+# Are We There Yet?
+
+Insights on AI software productivity from [2026 DX Annual](https://getdx.com/dxannual/)
+
+</div>
+
+<style>
+h1 { color: #fcd34d; font-size: 4rem; }
+</style>
+
+<!--
+arc-01 · Title slide. Reveal: all at once.
 -->
 
 ---
@@ -25,31 +49,43 @@ layout: center
 class: text-center
 ---
 
+<PhotoBg src="/images/PXL_20260702_174043807.png" :dimmed="$clicks > 0" />
+
+<div v-click class="relative z-10">
+
 # Isaiah Keepin
 
-<div class="text-xl leading-relaxed opacity-90">
+<div class="text-xl leading-relaxed mt-4">
 
-<v-clicks>
+AVP Engineering, Sun Life
 
-AVP Engineering, <span class="text-teal-400">Sun Life</span>
-
-Ex <span class="text-teal-400">Bluehouse Group</span>
+Ex Bluehouse Group
 
 isaiah@isaiahkeepin.com
 
-</v-clicks>
+</div>
 
 </div>
 
+<style>
+h1 { color: #5eead4; }
+</style>
+
 <!--
-arc-02 · Author slide.
+arc-02 · Author slide. Reveal: all at once.
 -->
 
 ---
+layout: center
+---
 
-# The Elephant in the <span class="text-teal-400">Room</span>
+<PhotoBg src="/images/PXL_20260704_230327817.png" :dimmed="$clicks > 0" />
 
-<v-clicks depth="2">
+<div class="relative z-10 text-left max-w-4xl">
+
+# The Elephant in the Room
+
+<v-clicks>
 
 - What's the reality beneath the hype?
 - Anecdotes are amazing, we've all seen them. At the same time —
@@ -62,13 +98,25 @@ arc-02 · Author slide.
 
 </v-clicks>
 
+</div>
+
+<style>
+h1 { color: #fda4af; }
+</style>
+
 <!--
 arc-03 · Introduction — the main idea.
 -->
 
 ---
+layout: center
+---
 
-# DX Annual <span class="text-teal-400">2026</span>
+<PhotoBg src="/images/PXL_20260705_140855514.png" :dimmed="$clicks > 0" />
+
+<div class="relative z-10 text-left max-w-4xl">
+
+# DX Annual 2026
 
 <v-clicks>
 
@@ -81,70 +129,136 @@ arc-03 · Introduction — the main idea.
 
 </v-clicks>
 
+</div>
+
+<style>
+h1 { color: #7dd3fc; }
+</style>
+
 <!--
 arc-04 · The conference — the main source.
+
+Verbal close (kept off-slide per "move wordy content to speaker notes"):
+My intent is to help you decide if you want to go deeper with any of the
+talks posted online.
 -->
 
 ---
+layout: center
+---
 
-# Measuring <span class="text-teal-400">Speed & Value</span>
+<PhotoBg src="/images/PXL_20260701_162750105.png" :dimmed="$clicks > 0" />
+
+<div class="relative z-10 text-left max-w-4xl">
+
+# Measuring Speed & Value
 
 <v-clicks>
 
 - Fundamentally, everyone wants to measure this and prove the value, and nobody really knows how
-- // TODO add opening comment
-- DX: PR commit rate is #1, followed by // TODO get other 3
-- Netflix: whatever metric you choose will change as you mature
+- All models are false but some are useful
+- DX — Org-level PR throughput
+- Uber — Whatever metric you choose will change as you mature
 
 </v-clicks>
+
+</div>
+
+<style>
+h1 { color: #bef264; }
+</style>
 
 <!--
 arc-05 · Measurement.
 -->
 
 ---
+layout: center
+---
 
-# AI <span class="text-teal-400">Platform Engineering</span>
+<PhotoBg src="/images/PXL_20260701_160313578.png" :dimmed="$clicks > 0" />
+
+<div class="relative z-10 text-left max-w-4xl">
+
+# AI Platform Engineering
 
 <v-clicks>
 
-- Airbnb: control plane as product
-- Mercari: harness, loops, eval
-- // TODO get company for centralized context
+- Airbnb — Control plane as product
+- Mercari — Nested autonomous loops
+- Netflix — Default agents with company context built in
+  - Low friction
+  - Good defaults with opt-out
+  - Eval set for knowledge base
+- **Note for smaller orgs** — lightweight versions of these things are possible and worthwhile, especially in context management
 
 </v-clicks>
+
+</div>
+
+<style>
+h1 { color: #c4b5fd; }
+</style>
 
 <!--
 arc-06 · Platform.
 -->
 
 ---
+layout: center
+---
 
-# Which Tasks to <span class="text-teal-400">Delegate?</span>
+<PhotoBg src="/images/PXL_20260701_162730380.png" :dimmed="$clicks > 0" />
+
+<div class="relative z-10 text-left max-w-4xl">
+
+# Which Tasks to Delegate?
 
 <v-clicks>
 
-- Google — don't trust it with security // TODO - who?
-- Remove drudgery & let more people help
-- // TODO find points on validation, pr reviews, bug finding
+- Atlassian — Remove toil & let more people help
+- 1Password — More humans in front and in back of SDLC
+- Microsoft — Humans plan and validate
+  - Agents create, deploy, and operate
+  - Except in security — not ready
 
 </v-clicks>
+
+</div>
+
+<style>
+h1 { color: #fdba74; }
+</style>
 
 <!--
 arc-07 · Delegation.
 -->
 
 ---
+layout: center
+---
 
-# Oh the <span class="text-teal-400">Humans</span>
+<PhotoBg src="/images/PXL_20260627_190159817.png" :dimmed="$clicks > 0" />
+
+<div class="relative z-10 text-left max-w-4xl">
+
+# Oh the Humans
 
 <v-clicks>
 
-- Jen St Pierre — tell a story where people can see themselves
-- Github — people will tell their own anxious story in the silence
-- no need for top down — the industry is doing it anyway // TODO find who
+- Dell — Tell a story where people can see themselves
+- Github — The identity crisis is real
+- Netflix — Differentiate training & message according to audience
+  - For example, power users want lots of custom options, but regular folks want a few vetted choices
+- Twilio — No need for top down mandates — the industry is doing it anyway
 
 </v-clicks>
+
+</div>
+
+<style>
+h1 { color: #f9a8d4; }
+</style>
 
 <!--
 arc-08 · Managing humans.
@@ -155,21 +269,94 @@ layout: center
 class: text-center
 ---
 
-# Prediction is Difficult<br><span class="text-teal-400">Especially About the Future</span>
+<PhotoBg src="/images/PXL_20260701_181756363.png" :dimmed="$clicks > 0" />
+
+<div class="relative z-10">
+
+# Prediction is Difficult<br>Especially About the Future
 
 <div class="text-left inline-block mt-4">
 
 <v-clicks>
 
-- Timescale is 6–12 months
-- Anything 18–24 is fooling yourself // TODO find who
-- So anything now is short term
+- Visible timescale is 6–12 months
+- Anything 18–24 is fooling yourself
 - But the skill to adjust now will be the skill to adjust later
+- Practices around the tools will change more slowly than the tools themselves (especially context management)
 
 </v-clicks>
 
 </div>
 
+</div>
+
+<style>
+h1 { color: #67e8f9; }
+</style>
+
 <!--
 arc-09 · Looking forward.
+-->
+
+---
+layout: center
+---
+
+<PhotoBg src="/images/PXL_20260705_202329156.png" :dimmed="$clicks > 0" />
+
+<div class="relative z-10 text-left max-w-4xl">
+
+# What's Happening in Burlington?
+
+<div v-click>
+
+- How are we measuring AI efficiency gains?
+- What are we doing to centralize AI resources, especially context?
+- How are we deciding which tasks to offload to AI?
+- What stories are we telling of an AI future where people can see themselves thriving?
+
+</div>
+
+</div>
+
+<style>
+h1 { color: #6ee7b7; }
+</style>
+
+<!--
+arc-10 · Discussion — seed questions for the room. Reveal: all at once.
+-->
+
+---
+layout: center
+---
+
+<PhotoBg src="/images/PXL_20260701_184225732.png" :dimmed="$clicks > 0" />
+
+<div class="relative z-10 text-left max-w-4xl">
+
+# Speaker Attribution
+
+<div v-click class="text-lg columns-2 gap-12">
+
+- 1Password — Nancy Wang
+- Airbnb — Madison Capps & Christopher Sanson
+- Atlassian — Tarun Mandhana
+- DX — Abi Noda
+- Mercari — Michael Galloway
+- Microsoft — Tim Bozarth
+- Netflix — Stewart Reichling
+- Twilio — Jesse Adametz
+- Uber — Abhishek Tibrewal
+
+</div>
+
+</div>
+
+<style>
+h1 { color: #e2e8f0; }
+</style>
+
+<!--
+arc-11 · Appendix: Attribution. Reveal: all at once.
 -->

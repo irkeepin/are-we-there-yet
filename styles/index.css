@@ -1,0 +1,65 @@
+/*
+ * Global deck styles — photo-background presentation.
+ * See deck/brief.md → Visual Style: blocky sans-serif, bold colorful text,
+ * legible over faded image backgrounds.
+ *
+ * Per-slide accent colors and layout stay in slides.md; this file carries
+ * only the deck-wide defaults.
+ */
+
+/* Blocky, heavy sans-serif for headlines (overrides seriph's serif). */
+.slidev-layout h1,
+.slidev-layout h2 {
+  font-family: 'Archivo', var(--slidev-font-sans), sans-serif;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  line-height: 1.02;
+}
+
+/* Big, confident headlines that hold up over a photo. */
+.slidev-layout h1 {
+  font-size: 3.4rem;
+}
+
+/* Body copy: strong weight + light color so it reads over the image. */
+.slidev-layout {
+  --slidev-font-sans: 'Archivo', ui-sans-serif, system-ui, sans-serif;
+}
+
+.slidev-layout li,
+.slidev-layout p {
+  font-weight: 600;
+  color: #f8fafc;
+}
+
+/* Legibility over photography: a soft shadow on every text layer. */
+.slidev-layout h1,
+.slidev-layout h2,
+.slidev-layout h3,
+.slidev-layout li,
+.slidev-layout p,
+.slidev-layout a {
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.75), 0 1px 3px rgba(0, 0, 0, 0.9);
+}
+
+/* Roomier bullet rhythm — the deck is a visual anchor, not a document. */
+.slidev-layout ul {
+  line-height: 1.5;
+}
+.slidev-layout li {
+  margin: 0.35em 0;
+}
+
+/* Nested (sub-)lines: slightly smaller and dimmed, they read as support. */
+.slidev-layout li li {
+  font-size: 0.85em;
+  font-weight: 500;
+  opacity: 0.85;
+}
+
+/* Links inherit the slide's accent rather than the theme blue. */
+.slidev-layout a {
+  color: inherit;
+  text-decoration-color: currentColor;
+  text-underline-offset: 4px;
+}
