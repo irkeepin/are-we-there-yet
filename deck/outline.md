@@ -21,6 +21,7 @@ text — **do not paraphrase it during regeneration; preserve his voice.**
 - **Copy:**
   - Headline: Are We There Yet?
   - Subtitle: Insights on AI software productivity from [2026 DX Annual](https://getdx.com/dxannual/)
+  - Reveal: all at once
 - **Traces to:** `slides.md` slide 1
 
 ---
@@ -34,6 +35,7 @@ text — **do not paraphrase it during regeneration; preserve his voice.**
     - AVP Engineering Sun Life
     - Ex Bluehouse Group
     - isaiah@isaiahkeepin.com
+  - Reveal: all at once
 - **Traces to:** `slides.md` slide 2
 
 ---
@@ -68,6 +70,7 @@ text — **do not paraphrase it during regeneration; preserve his voice.**
     - eg Microsoft, Google, Netflix, Airbnb, Mercari, Dell
     - Excellent cross sectional view of the issues at play
     - Dev productivity leaders: neither kool-aid nor pitchforks
+    - My intent is to help you decide if you want to go deeper with any of the talks posted online
 - **Traces to:** `slides.md` slide 4
 
 ---
@@ -79,9 +82,9 @@ text — **do not paraphrase it during regeneration; preserve his voice.**
   - Headline: Measuring Speed & Value
   - Key lines
     - Fundamentally, everyone wants to measure this and prove the value, and nobody really knows how
-    - // TODO add opening comment
-    - DX: PR commit rate is #1, followed by // TODO get other 3
-    - Netflix: whatever metric you choose will change as you mature
+    - All models are false but some are useful
+    - DX - Org-level PR throughput
+    - Uber - Whatever metric you choose will change as you mature
 - **Traces to:** `slides.md` slide 5
 
 ---
@@ -92,9 +95,13 @@ text — **do not paraphrase it during regeneration; preserve his voice.**
 - **Copy:**
   - Headline: AI Platform Engineering
   - Key lines
-    - Airbnb: control plane as product
-    - Mercari: harness, loops, eval
-    - // TODO get company for centralized context
+    - Airbnb - Control plane as product
+    - Mercari - Nested autonomouns loops
+    - Netflix - Default agents with company context built in
+      - Low friction
+      - Good defaults with opt-out 
+      - Eval set for knowledge base
+    - **Note for smaller orgs** - lightweight versions of these things are possible and worthwhile, especially in context management
 - **Traces to:** `slides.md` slide 6
 
 ---
@@ -105,9 +112,11 @@ text — **do not paraphrase it during regeneration; preserve his voice.**
 - **Copy:**
   - Headline: Which Tasks to Delegate?
   - Key lines
-    - Google - don't trust it with security // TODO - who?
-    - Remove drudgery & let more people help
-    - // TODO find points on validation, pr reviews, bug finding
+    - Atlassian - Remove toil & let more people help
+    - 1Password - More humans in front and in back of SDLC
+    - Microsoft - Humans plan and validate
+      - Agents create, deploy, and operate
+      - Except in security - not ready
 - **Traces to:** `slides.md` slide 7
 
 ---
@@ -118,9 +127,11 @@ text — **do not paraphrase it during regeneration; preserve his voice.**
 - **Copy:**
   - Headline: Oh the Humans
   - Key lines
-    - Jen St Pierre - tell a story where people can see themselves
-    - Github - people will tell their own anxious story in the silence
-    - no need for top down - the industry is doing it anyway // TODO find who
+    - Dell - Tell a story where people can see themselves
+    - Github - The identity crisis is real
+    - Netflix - Differentiate training & message according to audience
+      - For example, power users want lots of custom options, but regular folks want a few vetted choices
+    - Twilio - No need for top down mandates - the industry is doing it anyway
 - **Traces to:** `slides.md` slide 8
 
 ---
@@ -131,8 +142,43 @@ text — **do not paraphrase it during regeneration; preserve his voice.**
 - **Copy:**
   - Headline: Prediction is Difficult Especially About the Future
   - Key lines
-    - Timescale is 6-12 months
-    - Anything 18-24 is fooling yourself // TODO find who
-    - So anything now is short term
+    - Visible timescale is 6-12 months
+    - Anything 18-24 is fooling yourself
     - But the skill to adjust now will be the skill to adjust later
+    - Practices around the tools will change more slowly than the tools themselves (especially context management)
 - **Traces to:** `slides.md` slide 9
+
+---
+
+### arc-10 · Discussion
+
+- **Purpose:** Seed discussion with questions for the room
+- **Copy:**
+  - Headline: What's Happening in Burlington?
+  - Key lines
+    - How are we measuring AI efficiency gains?
+    - What are we doing to centralize AI resources, especially context?
+    - How are we deciding which tasks to offload to AI?
+    - What stories are we telling of an AI future where people can see themselves thriving?
+  - Reveal: All at once
+- **Traces to:** `slides.md` slide 9
+
+---
+
+### arc-11 · Appendix: Attribution
+
+- **Purpose:** List conference speakers for reference
+- **Copy:**
+  - Headline: Speaker Attribution
+  - Key lines
+    - 1Password - Nancy Wang
+    - Airbnb - Madison Capps & Christopher Sanson
+    - Atlassian - Tarun Mandhana
+    - DX - Abi Noda
+    - Mercari - Michael Galloway
+    - Microsoft - Tim Bozarth
+    - Netflix - Stewart Reichling
+    - Twilio - Jesse Adametz
+    - Uber - Abhishek Tibrewal
+  - Reveal: All at once
+- **Traces to:** `slides.md` slide 11

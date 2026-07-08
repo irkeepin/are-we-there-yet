@@ -39,7 +39,9 @@ look to his existing copy as an example of voice.
 - bold, colorful text
 - graceful transitions
 - sparse, tasteful animation
-- generally reveal one line per click (unless lines obviously function as a group)
+- generally reveal one line per click
+  - except sub-lines, which should reveal together
+  - and except where noted otherwise by a "Reveal" entry in the node
 
 ## Layout
 
