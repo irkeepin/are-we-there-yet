@@ -15,9 +15,30 @@ in `slides.md`, separated by `---`. The dev server hot-reloads on save.
 
 ```bash
 pnpm dev      # slidev --open — live dev server, hot-reloads slides.md
-pnpm build    # slidev build — static site into dist/
+pnpm build    # slidev build → dist/, then strips dist/_redirects (see Deploy)
 pnpm export   # slidev export — PDF/PNG export
 ```
+
+## Deploy
+
+Live at **https://talk.isaiahkeepin.com**. Hosted on **Cloudflare Workers Static
+Assets** (not classic Pages), wired to the GitHub repo `irkeepin/are-we-there-yet`.
+
+- **Workflow:** `git push origin main` → Cloudflare runs `pnpm run build` →
+  `npx wrangler deploy` uploads `dist/`. No GitHub Actions; Cloudflare builds from
+  the repo. There is nothing to deploy by hand.
+- **Config:** `wrangler.jsonc` points `wrangler deploy` at `./dist` and sets
+  `not_found_handling: "single-page-application"` — that's what makes deep links
+  (e.g. `/5`, refresh mid-deck) resolve to the SPA instead of 404ing.
+- **Custom domain:** `talk.isaiahkeepin.com` is a subdomain (not a subpath of the
+  apex) attached in the Worker's *Settings → Domains & Routes*. The apex
+  `isaiahkeepin.com` is a separate Cloudflare project — don't touch it.
+
+> ⚠️ **`_redirects` landmine.** Slidev's `build` emits a `dist/_redirects` with a
+> `/* /index.html 200` catch-all. Workers Static Assets rejects it as a redirect
+> loop and the deploy fails. The `build` script therefore ends with
+> `rm -f dist/_redirects`; SPA fallback is handled by `wrangler.jsonc` instead.
+> **Don't re-add `_redirects`** (or a `public/_redirects`) — it will break deploys.
 
 ## Where things live
 
